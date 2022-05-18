@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    color: aliceblue;
+    margin: 10px;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+
+    transform: translateX(400%);
+    transition: transform 0.3s ease;
+}
+.box:nth-of-type(even){
+    transform: translateX(-400%);
+
+}
+
+.box.show{
+    transform: translateX(0);
+
+
+}
